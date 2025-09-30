@@ -1,0 +1,23 @@
+#include <stdio.h> 
+int main() { 
+int n; 
+printf("Введіть розмір масиву: "); 
+scanf("%d", &n); 
+int A[n], B[n]; 
+printf("Введіть елементи масиву A:\n"); 
+for (int i = 0; i < n; i++) { 
+scanf("%d", &A[i]); 
+} 
+int j = 0; 
+for (int i = 0; i < n; i++) { 
+if (A[i] != 0) { 
+B[j] = A[i]; 
+j++; 
+} 
+} 
+printf("Масив B без нульових елементів:\n"); 
+for (int i = 0; i < j; i++) { 
+printf("%d ", B[i]); 
+} 
+return 0; 
+} 
